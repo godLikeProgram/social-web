@@ -7,7 +7,7 @@
     <parent>
         <groupId>com.mypet.base</groupId>
         <artifactId>bom</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>1.2-SNAPSHOT</version>
     </parent>
 
     <groupId>com.mypet.social</groupId>
@@ -21,20 +21,31 @@
         <module>social-web</module>
     </modules>
 
+    <properties>
+        <social.dao.version>1.1-SNAPSHOT</social.dao.version>
+        <social.service.version>1.0-SNAPSHOT</social.service.version>
+        <social.impl.version>1.0-SNAPSHOT</social.impl.version>
+        <swagger.version>2.4.0</swagger.version>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot</artifactId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger2</artifactId>
-            <version>2.2.2</version>
+            <version>${swagger.version}</version>
         </dependency>
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger-ui</artifactId>
-            <version>2.2.2</version>
+            <version>${swagger.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
         </dependency>
     </dependencies>
 

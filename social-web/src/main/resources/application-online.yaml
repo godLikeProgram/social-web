@@ -1,0 +1,15 @@
+#
+#数据库地址
+#
+datasource:
+  jdbcUrl: jdbc:mysql://localhost:12306/kuaigou?#useUnicode=true&noAccessToProcedureBodies=true
+  user: agency_quick
+  password: avcxbh
+  driverClass: com.mysql.jdbc.Driver
+
+#
+#日志地址
+#
+logging:
+  config: classpath:logback.xml
+  path: ./logs

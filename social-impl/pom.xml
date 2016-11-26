@@ -11,5 +11,17 @@
 
     <artifactId>social-impl</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.mypet.social</groupId>
+            <artifactId>social-service</artifactId>
+            <version>${social.service.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.mypet.social</groupId>
+            <artifactId>social-dao</artifactId>
+            <version>${social.dao.version}</version>
+        </dependency>
+    </dependencies>
 
 </project>
